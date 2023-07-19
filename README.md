@@ -25,6 +25,7 @@ identity: {
  !!! the game switches only to visible, after someone call the "!jack" command in your channel !!!
 
  commands are:  !jack - to show the game | !hit - to draw a card | !stand - to stand with enough cards ^^ | !deal - to manually end the round
- 
+
+ p.s. you can use the buttons too, if game is active...
 
  Demo: https://rebrand.ly/vjcuay8?channel=YOUR_CHANNEL
