@@ -4,7 +4,10 @@ my first try to make a playable blackjack overlay for twitch (for OBS)
 reqired: webspace, Twitch account and a streaming app like OBS
 
 It uses TMI.js to connect to Twitch chat. Twitch Auth token needed for the Bot. 
+
 use https://twitchapps.com/tmi/ to create the oauth key 
+
+
 
 at first, put your data into the js/twitch.js file
 
