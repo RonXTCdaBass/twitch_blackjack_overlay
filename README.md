@@ -1,6 +1,6 @@
 # twitch_blackjack_overlay
 
-## my first try to make a playable blackjack overlay version for twitch (for OBS)
+## my interpretation and first try to make a playable blackjack overlay version for twitch (for OBS)
 
  reqired: webspace, Twitch account and a streaming app like OBS
 
