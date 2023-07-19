@@ -44,7 +44,7 @@ body {
     flex-wrap: wrap;
     padding: 1px;
 	background-color: transparent;
-    /* background: url('../img/table.jpg') center; */
+    /* background: url('../img/table.jpg') center; // you can show the table if you like */
     color: #f1f1f1;
 }
 
