@@ -34,3 +34,7 @@
  Demo: https://rebrand.ly/vjcuay8?channel=YOUR_CHANNEL
 
  ...still incomplete ;) 
+
+todolist
+[ ] answering to the player with name (@user]
+[ ] answering the counted points
