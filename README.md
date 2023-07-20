@@ -31,10 +31,11 @@
 
  p.s. you can use the buttons too, in the index-visible.html for testing or just play for yourself ...
 
- Demo: https://rebrand.ly/vjcuay8?channel=YOUR_CHANNEL
+ Demo: https://rebrand.ly/vjcuay8
 
  ...still incomplete ;) 
 
 todolist
 [ ] answering to the player with name (@user]
 [ ] answering the counted points
+[?] why the countdown not work in local use?
