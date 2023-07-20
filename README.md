@@ -36,6 +36,9 @@
  ...still incomplete ;) 
 
 todolist
+
 [ ] answering to the player with name (@user]
+
 [ ] answering the counted points
+
 [?] why the countdown not work in local use?
