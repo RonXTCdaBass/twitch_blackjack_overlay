@@ -280,6 +280,7 @@ function sleep(ms)
 function countdown() {
 let remainingTimeElement = document.querySelector("#remainingTime"),
              secondsLeft = 10
+	remainingTime.style.display = "block"
 
 const Timer = setInterval( 
     () => {
