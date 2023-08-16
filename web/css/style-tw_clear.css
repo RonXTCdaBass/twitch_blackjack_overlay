@@ -91,6 +91,11 @@ body {
     border-radius: 10px;
 }
 
+#remainingTime
+{
+	display: block;
+}
+
 /* Game-Popup */
 #game-overlay {
 visibility: hidden;
