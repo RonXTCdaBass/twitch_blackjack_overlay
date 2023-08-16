@@ -41,4 +41,4 @@ todolist
 
 [ ] answering the counted points
 
-[?] why the countdown not work in local use?
+[✔] now the countdown work in local use.
