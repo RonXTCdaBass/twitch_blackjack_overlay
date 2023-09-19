@@ -31,6 +31,8 @@ simple with a texteditor of your choice
  but its still to find, for somebody who knows how!!! 
  so better don´t use your Streamer-Account instead a Bot-Acc.
 
+ 
+
 ### Now it´s time to upload to your webspace!
  
  you can use the "web" folder only and rename how you like, then
@@ -43,21 +45,26 @@ simple with a texteditor of your choice
  Or you upload the complete main-folder structure including the "index.html" for generating the overlay-link.
  
  then put the link as browser-source into your OBS.
+ 
+ 
 
-## !!! the game is still invisible, until someone call the "!jack" command in your channel !!!
+### !!! the game is still invisible, until someone call the "!jack" command in your channel !!!
 
  Player-commands are:  !jack - to show the game | !hit - to draw a card | !stand - to stand with enough cards ^^ | !deal - to manually end the round
+ 
  
  +++ only the streamer can use the !deal command for end the game no matter who started the round!
 
  p.s. you can use the shown buttons too, after someone calls the "!jack" ...for testing or just play for yourself ...
 
- DEMO: (new server)  http://twitch-jack.rf.gd
+ 
+
+ DEMO:  http://twitch-jack.rf.gd   (new server runs with php version of the files) 
  
  Demo: https://rebrand.ly/vjcuay8 (actually serverproblems)
  
 
- far from perfect ...still incomplete ;) 
+ far from perfect ...still incomplete ;) but working fine for now ^^
  
  
 
