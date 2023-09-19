@@ -21,11 +21,11 @@
 
 simple with a texteditor of your choice
 
- " identity: {
+		 " identity: {
 		username: 'YOUR_BOTNAME',
 		password: 'YOUR_BOT_OAUTH:TOKEN',
-	},
- "
+			},
+		 "
 
  after this, you can use https://obfuscator.io/ to make your data a lil bit harder to read ... 
  but its still to find, for somebody who knows how!!! 
