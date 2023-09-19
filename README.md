@@ -31,7 +31,10 @@
 
  p.s. you can use the buttons too, in the index-visible.html for testing or just play for yourself ...
 
- Demo: https://rebrand.ly/vjcuay8
+ DEMO: (new server)  http://twitch-jack.rf.gd
+ 
+ Demo: https://rebrand.ly/vjcuay8 (actually serverproblems)
+ 
 
  ...still incomplete ;) 
 
