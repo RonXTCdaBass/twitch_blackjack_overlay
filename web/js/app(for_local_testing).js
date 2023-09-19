@@ -1,5 +1,15 @@
-import { client } from './twitch.js';
-import { channel } from './twitch.js';
+const client = new tmi.Client({
+	identity: {
+		username: 'YOUR_BOTNAME',
+		password: 'YOUR_BOT_OAUTH:TOKEN',
+	},
+
+  connection: {
+    secure: true,
+    reconnect: true,
+  },
+  channels: ['YOUR_CHANNEL'],
+});
 
 let blackjackGame = 
 {

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="./web/js/jquery-3.6.0.min.js"></script>
+<!--    <script src="./web/js/bootstrap.bundle.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./web/css/style-tw_clear.css">
+
+
+    <link rel="icon" type="image/ico" href="./web/img/twitch-blackjack.ico">
+
+
+<script>
+    $(document).ready(function () {
+
+        // Check if any input fields have changed
+        $(":text,textarea,:checkbox,input[type=range]").on('change', function (e) {
+            $("#overlaylink").addClass("hide");
+        });				
+				
+        document.getElementById("generate_button").addEventListener("click", function (e) {
+            let mainChannel = document.getElementById("mainChannel").value;
+            if (!mainChannel) {
+                alert('Twitch Channel can not empty!');
+            }
+            //build overlay url
+            if (mainChannel) {
+                let srcURL = window.location.protocol + "//" + window.location.host + window.location.pathname;
+                let fullUrl = srcURL + "web/game.html?channel=" + mainChannel + "";
+                fullUrl = fullUrl.replace("index.html", "");
+                document.getElementById("overlaylink").classList.remove("hide");
+                document.getElementById("overlaylink").innerHTML = "<center><p><b>Add this link as a browser source in OBS. <br>" +
+                    "<a href='" + fullUrl + "' target='_blank'>" + fullUrl + "</a></b></p></center>";
+            }
+        });
+    });
+</script>
+<style>
+#generator-overlay {
+display: block;
+position: absolute;
+z-index: 200;
+opacity: 0.9;
+top: 0;
+bottom: 0;
+background: transparent;
+width: 99%;
+height: 99%;
+}
+.generator-container {
+font-family: Helvetica, Arial, freesans, sans-serif;
+display: block;
+position: absolute;
+z-index: 210;
+top: 50%;
+left: 50%;
+width: 420px;
+margin-left: -250px; /* the value of width to center div*/
+margin-top: -100px; /* the value of height to center div*/
+background: #ccc;
+background: url('./web/img/linkgen_table.jpg');
+border-radius: 10px;
+padding: 10px;
+}
+.generator-content {
+padding: 2px;
+height: auto;
+margin: 10px;
+width: 90%;
+}
+.hide {
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+<center><img src="./web/img/bj_screen.png"></center>
+
+<div id="generator">
+	<div id="generator-container" class="generator-container">
+
+		<div class="generator-content">
+            <h3 class="h4">Twitch Overlay Link Generator</h3>
+				<hr>
+				<div class="form-label">
+					<label for="mainChannel">Twitch Channel: </label>
+					<input type="text" id="mainChannel" class="form-control">
+				<button class="btn" id="generate_button" type="button">Generate Overlay Link</button>
+				</div>
+				<hr>
+				<div id="overlaylink" class="hide"></div>
+		</div>
+	</div>
+</div>
+</body></html>

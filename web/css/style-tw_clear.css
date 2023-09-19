@@ -13,7 +13,7 @@ body {
 	height: 700px;
 	margin-top: 10px;
     text-align: center;
-	border: 3px double #f10000;
+	border: 1px double #f10000;
 	background: rgba(0, 0, 0, 0.4);
 }
 
@@ -44,7 +44,7 @@ body {
     flex-wrap: wrap;
     padding: 1px;
 	background-color: transparent;
-    /* background: url('../img/table.jpg') center; // you can show the table if you like */
+    /* background: url('../img/table_05.png') center; */
     color: #f1f1f1;
 }
 
@@ -93,10 +93,56 @@ body {
 
 #remainingTime
 {
+	color: #00f1f1;
 	display: block;
 }
 
-/* Game-Popup */
+/* Link-Generator */
+
+
+.form-label
+{
+padding-top:calc(.25rem + 1px);
+padding-bottom:calc(.25rem + 1px);
+margin-bottom:0;
+font-size:1.0rem;
+line-height:1.5;
+}
+
+.form-control
+{
+	padding:.25rem;
+	font-size:1.0rem;
+	line-height:1.5;
+	border-radius:.3rem;
+	
+	color:#495057;
+	background-color:#ccc;
+	border-color:#80bdff;
+	outline:0;
+	box-shadow:0 0 0 .2rem rgba(0,123,255,.25);
+	}
+
+.btn generate_button
+{
+	height:calc(2.0em + 1rem + 2px);
+	width: 30%;
+	font-size:1.0rem;
+	line-height:1.5;
+	color:#fff;
+	background-color:#007bff;
+	text-align: right;
+	}
+.btn:hover generate_button
+{
+	color:#fff;
+	background-color:#0069d9;
+
+}
+
+.hide{display:none;}
+
+/* Popup */
 #game-overlay {
 visibility: hidden;
 position: absolute;
@@ -126,6 +172,3 @@ height: auto;
 margin: 5px;
 width: 100%;
 }
-.hide {
-        display: none;
-    }
