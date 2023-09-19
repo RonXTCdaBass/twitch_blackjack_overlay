@@ -2,10 +2,14 @@
 
 ## my interpretation and first try to make a playable blackjack overlay version for twitch (for OBS)
 
- for self-hosting
- Required: 	• Webspace (because to many errors while trying local without a server installed) ,
-			• Twitch account for the Bot ,
-			• and a streaming app like OBS
+ for self-hosting required: 	
+ 		
+   		• Webspace (because to many errors while trying local without a server installed) ,
+ 
+		• Twitch account for the Bot ,
+   
+		• and a streaming app like OBS
+  
 
  It uses TMI.js to connect to Twitch chat. Twitch Auth token needed for the Bot. 
 
@@ -13,7 +17,9 @@
 
 
 
-## After preparation, put your data into the js/twitch.js file with a texteditor of your choice
+### After preparation, put your data into the js/twitch.js file 
+
+simple with a texteditor of your choice
 
  " identity: {
 		username: 'YOUR_BOTNAME',
@@ -25,13 +31,13 @@
  but its still to find, for somebody who knows how!!! 
  so better don´t use your Streamer-Account instead a Bot-Acc.
 
- now it´s time to upload to your webspace!
+### Now it´s time to upload to your webspace!
  
  you can use the "web" folder only and rename how you like, then
 
  call the overlay with http://YOUR_URL/YOUR_FOLDER/game.html and setting "?channel=YOUR_CHANNEL" 
  
- like [example.play/jack/game.html?channel=justplay]
+ * like [example.play/jack/game.html?channel=justplay]
  
  
  Or you upload the complete main-folder structure including the "index.html" for generating the overlay-link.
