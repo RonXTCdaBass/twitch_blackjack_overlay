@@ -29,7 +29,7 @@
 
  commands are:  !jack - to show the game | !hit - to draw a card | !stand - to stand with enough cards ^^ | !deal - to manually end the round
 
- p.s. you can use the buttons too, in the index-visible.html for testing or just play for yourself ...
+ p.s. you can use the buttons too, after activating via chat, for testing or just play for yourself ...
 
  DEMO: (new server)  http://twitch-jack.rf.gd
  
