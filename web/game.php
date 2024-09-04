@@ -1,0 +1,51 @@
+<?php
+// Made by: RonXTCdaBass
+// Year:    2023
+// still incomplete ;)
+// php version of ("game.html");
+// working
+include ("header.php");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style-tw_clear.css">
+
+    <link rel="icon" href="./img/Logo.png">
+	<script src="./js/tmi.min.js" crossorigin="anonymous"></script>
+    <title>Twitch-Jack</title>
+</head>
+
+    <body>	
+	<div id="game-overlay"></div>
+<div id="game-container" class="game-container">
+	<div class="game-content">
+	
+        <div class='container'>
+            <h3><span id='blackjack-result'><b>!jack</b> to play Blackjack</span></h3>
+			<p class="timer"><span max="10" id="remainingTime"></span></p> 
+				<div class='flex-blackjack-row1'>
+					<div id='your-box'>
+                    <h2><span id='users'></span>: <span id='your-blackjack-result'>0</span></h2>
+					</div>
+					<div id="dealer-box">
+                    <h2>Jack: <span id='dealer-blackjack-result'>0</span></h2>
+					</div>
+				</div>
+            <div class='flex-blackjack-row2'>
+			<button class='btn-lg btn-primary mr-2' id='blackjack-hit-button'><b>!hit</b> > New Card</button>
+            <button class='btn-lg btn-warning mr-2' id='blackjack-stand-button'><b>!stand</b> > Enough</button>
+            <button class='btn-lg btn-danger mr-2' id='blackjack-deal-button'><b>!deal</b> > New Round</button>
+			</div>
+		</div>
+	
+	<script type="module" src="./js/app3.js" crossorigin="anonymous"></script>
+</div>
+</div>
+    </body>
+	
+</html>
