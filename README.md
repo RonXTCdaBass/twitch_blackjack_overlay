@@ -59,12 +59,10 @@ simple with a texteditor of your choice
 
  
 
- DEMO:  http://twitch-jack.rf.gd   (new server runs with php version of the files) 
- 
- Demo: https://rebrand.ly/vjcuay8 (actually serverproblems)
+ DEMO:  http://twitch-jack.rf.gd   (server runs with php files)
  
 
- far from perfect ...still incomplete ;) but working fine for now ^^
+ far from perfect ...still incomplete ;) but still working fine for me ^^
  
  
 
