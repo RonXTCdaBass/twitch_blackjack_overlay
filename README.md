@@ -35,36 +35,39 @@ simple with a texteditor of your choice
 
 ### Now it´s time to upload to your webspace!
  
- you can use the "web" folder only and rename how you like, then
+ you can use the complete "web" folder only and rename how you like, then
 
- call the overlay with http://YOUR_URL/YOUR_FOLDER/game.html and setting "?channel=YOUR_CHANNEL" 
+ call the overlay with http://YOUR_URL/YOUR_FOLDER/game.php and add setting "?channel=YOUR_CHANNEL" 
  
- * like [example.play/jack/game.html?channel=justplay]
+ * like [example.play/jack/game.php?channel=justplay]
  
  
- Or you upload the complete main-folder structure including the "index.html" for generating the overlay-link.
+ or just upload the complete folder structure including the files and call the "index.php" for generating the overlay-link.
  
  then put the link as browser-source into your OBS.
  
- 
+ the example and local-files are not needet for webhosting.
+
+ -------------------------------------------------------------------
 
 ### !!! the game is still invisible, until someone call the "!jack" command in your channel !!!
 
  Player-commands are:  !jack - to show the game | !hit - to draw a card | !stand - to stand with enough cards ^^ | !deal - to manually end the round
  
  
- +++ only the streamer can use the !deal command for end the game no matter who started the round!
+ +++ streamer can use the !deal command for end the game everytime, no matter who started the round!
 
  p.s. you can use the shown buttons too, after someone calls the "!jack" ...for testing or just play for yourself ...
 
  
 
- DEMO:  http://twitch-jack.rf.gd   (server runs with php files)
+ DEMO:  http://twitch-jack.rf.gd   (server runs with php)
  
 
  far from perfect ...still incomplete ;) but still working fine for me ^^
  
- 
+ ![twitch-jack_screenshot](https://github.com/user-attachments/assets/443c4111-719c-4e16-88e1-1539b4b9e2f3)
+
 
 	todolist
 
