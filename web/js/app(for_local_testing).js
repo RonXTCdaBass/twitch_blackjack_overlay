@@ -12,7 +12,6 @@ const client = new tmi.Client({
 });
 
 let blackjackGame = 
-let blackjackGame = 
 {
     'you': {'scoreSpan': '#your-blackjack-result', 'div': '#your-box', 'score': 0},
     'dealer': {'scoreSpan': '#dealer-blackjack-result', 'div': '#dealer-box', 'score': 0},
