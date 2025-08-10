@@ -59,7 +59,7 @@ body {
 
 .flex-blackjack-row1 img
 {
-    height: 40%;
+    max-height: 40%;
 	width: auto;
     padding: 1px;
 }
