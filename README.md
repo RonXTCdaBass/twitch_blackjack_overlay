@@ -75,4 +75,6 @@ simple with a texteditor of your choice
 
 	[ ] answering the counted points
 
-	[✔] now the countdown shown correctly.
+	[✔] now the countdown shown correctly
+
+ 	[✔] now all 52 cards used
