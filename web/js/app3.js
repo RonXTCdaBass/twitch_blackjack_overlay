@@ -5,8 +5,8 @@ let blackjackGame =
 {
     'you': {'scoreSpan': '#your-blackjack-result', 'div': '#your-box', 'score': 0},
     'dealer': {'scoreSpan': '#dealer-blackjack-result', 'div': '#dealer-box', 'score': 0},
-    'cards': ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A',],
-    'cardMap': {'2' : 2, '3' : 3, '4' : 4, '5' : 5, '6' : 6, '7' : 7, '8' : 8, '9' : 9, '10' : 10, 'J' : 10, 'Q' : 10, 'K' : 10, 'A' : [1,11]}, 
+    'cards': ['d2','h2','s2','c2', 'd3','h3','s3','c3', 'd4','h4','s4','c4', 'd5','h5','s5','c5', 'd6','h6','s6','c6', 'd7','h7','s7','c7', 'd8','h8','s8','c8', 'd9','h9','s9','c9', 'd10','h10','s10','c10', 'dj','hj','sj','cj', 'dq','hq','sq','cq', 'dk','hk','sk','ck', 'dA','hA','sA','cA'],
+    'cardMap': {'d2': 2,'h2': 2,'s2': 2,'c2' : 2, 'd3': 3,'h3': 3,'s3': 3,'c3' : 3, 'd4': 4,'h4': 4,'s4': 4,'c4' : 4, 'd5': 5,'h5': 5,'s5': 5,'c5' : 5, 'd6': 6,'h6': 6,'s6': 6,'c6' : 6, 'd7': 7,'h7': 7,'s7': 7,'c7' : 7, 'd8': 8,'h8': 8,'s8': 8,'c8' : 8, 'd9': 9,'h9': 9,'s9': 9,'c9' : 9, 'd10': 10,'h10': 10,'s10': 10,'c10' : 10, 'dj': 10,'hj': 10,'sj': 10,'cj' : 10, 'dq': 10,'hq': 10,'sq': 10,'cq' : 10, 'dk': 10,'hk': 10,'sk': 10,'ck' : 10, 'dA': 11, 'hA': 11, 'sA': 11, 'cA' : 11}, 
 	'isStand': false,
     'isTurnOver': false,
 }
@@ -156,14 +156,14 @@ function showCard(activePlayer, card)
     if(activePlayer['score'] <= 21)
     {
         let cardImage = document.createElement('img');
-        cardImage.src = 'img/' + card + '.png'
+        cardImage.src = 'fullcards/' + card + '.png'
         document.querySelector(activePlayer['div']).appendChild(cardImage);
     }
 }
 	
 function randomCard()
 {
-    let randomIndex = Math.floor(Math.random() * 13);
+    let randomIndex = Math.floor(Math.random() * 52);
     return blackjackGame['cards'][randomIndex];
 }
 
@@ -171,7 +171,7 @@ function updateScore(activePlayer, card)
 {
     if(activePlayer['score'] <= 21)
     {
-        if(card === 'A')
+        if(card === ['dA'||'hA'||'sA'||'cA'])
         {
             if(activePlayer['score'] + blackjackGame['cardMap'][card][1] <= 21)
             {
